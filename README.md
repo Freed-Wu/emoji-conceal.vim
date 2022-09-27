@@ -15,7 +15,7 @@ After using this plugin:
 
 ## Usage
 
-Add this line in your `ftplugin/markdown.vim`, `ftplugin/pandoc.vim`, etc.
+Add this line in your `after/syntax/*.vim`:
 
 ```vim
 call emoji#conceal()
