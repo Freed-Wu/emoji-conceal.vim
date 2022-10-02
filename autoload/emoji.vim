@@ -1540,3 +1540,4 @@ function! emoji#conceal() abort
     execute "syntax match markdownEmoji ':" . s:name . ":' conceal cchar=" . split(s:emoji, '\zs')[0]
   endfor
 endfunction
+" ex: tabstop=2 shiftwidth=2

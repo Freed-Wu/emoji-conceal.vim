@@ -1,8 +1,5 @@
 # emoji-conceal.vim
 
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![Gitmoji](https://img.shields.io/badge/gitmoji-%20%F0%9F%98%9C%20%F0%9F%98%8D-FFDD67?style=flat-square)](https://gitmoji.dev)
-
 Conceal emoji shortcodes for [github flavor markdown](https://github.com/ikatyang/emoji-cheat-sheet).
 
 Before using this plugin:
@@ -46,3 +43,7 @@ call emoji#conceal()
     shortcodes, written by typescript.
   - <https://github.com/junegunn/vim-emoji>: a plugin to input emoji shortcodes,
     written by pure vimscript.
+- conceal HTML characters
+  - <https://github.com/Freed-Wu/html-conceal.vim>
+- conceal fontawesome
+  - <https://github.com/Freed-Wu/fontawesome-conceal.vim>
