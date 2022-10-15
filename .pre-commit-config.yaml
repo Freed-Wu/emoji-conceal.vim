@@ -32,7 +32,8 @@ repos:
     rev: v0.17.0
     hooks:
       - id: gitlint
-        args: [--ignore=body-is-missing, --msg-filename]
+        args:
+          - --msg-filename
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
     rev: 2.6.1
     hooks:
@@ -45,7 +46,8 @@ repos:
     rev: 0.7.16
     hooks:
       - id: mdformat
-        args: [--number]
+        args:
+          - --number
         additional_dependencies:
           - mdformat-gfm
           - mdformat-myst
