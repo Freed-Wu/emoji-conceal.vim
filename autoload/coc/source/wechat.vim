@@ -4,7 +4,7 @@ function! coc#source#wechat#init() abort
   return {
         \ 'shortcut': 'wechat',
         \ 'priority': 9,
-        \ 'filetypes': ['text'],
+        \ 'filetypes': ['text', 'markdown'],
         \ 'triggerCharacters': ['['],
         \ }
 endfunction
