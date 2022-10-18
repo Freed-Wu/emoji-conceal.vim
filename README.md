@@ -57,11 +57,22 @@ After using this plugin:
 
 ![after-html](https://user-images.githubusercontent.com/32936898/193464801-0298bd37-7367-4dbe-bacc-87c33b412925.png)
 
+Support completing [wechat emoji](https://emojipedia.org/wechat/show_all/)
+(requires [coc.nvim](github.com/neoclide/coc.nvim)),
+see [Input emoji](#input-emoji) to know how to complete
+[github emoji](https://github.com/markdown-templates/markdown-emojis).
+
+![complete](https://user-images.githubusercontent.com/32936898/196516002-ec4222d7-f5bc-41a2-bdd7-768f9f6d3d43.png)
+
+![result](https://user-images.githubusercontent.com/32936898/196516013-53a2840c-2ba3-4921-b246-1ab18d18034f.png)
+
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
 
 - [Conflict](#conflict)
 - [FAQ](#faq)
 - [Related](#related)
+  - [Conceal tex symbols](#conceal-tex-symbols)
+  - [Input emoji](#input-emoji)
 
 <!-- mdformat-toc end -->
 
@@ -91,14 +102,17 @@ After using this plugin:
 
 ## Related
 
-- conceal tex symbols
-  - <https://github.com/lervag/vimtex>: a comprehensive LaTeX IDE.
-  - <https://github.com/KeitaNakamura/tex-conceal.vim>: the first plugin to do
-    this work for vim.
-- Input emoji
-  - <https://github.com/neoclide/coc-sources>: a plugin to input emoji, written
-    by typescript.
-  - <https://github.com/nyaa8/coc-emoji-shortcodes>: a plugin to input emoji
-    shortcodes, written by typescript.
-  - <https://github.com/junegunn/vim-emoji>: a plugin to input emoji shortcodes,
-    written by pure vimscript.
+### Conceal tex symbols
+
+- <https://github.com/lervag/vimtex>: a comprehensive LaTeX IDE.
+- <https://github.com/KeitaNakamura/tex-conceal.vim>: the first plugin to do
+  this work for vim.
+
+### Input emoji
+
+- <https://github.com/neoclide/coc-sources>: a plugin to input emoji, written
+  by typescript.
+- <https://github.com/nyaa8/coc-emoji-shortcodes>: a plugin to input emoji
+  shortcodes, written by typescript.
+- <https://github.com/junegunn/vim-emoji>: a plugin to input emoji shortcodes,
+  written by pure vimscript.
