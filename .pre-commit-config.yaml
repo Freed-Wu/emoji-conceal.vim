@@ -25,9 +25,11 @@ repos:
     hooks:
       - id: remove-crlf
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.1
+    rev: v2.2.2
     hooks:
       - id: codespell
+        additional_dependencies:
+          - tomli
   - repo: https://github.com/jorisroovers/gitlint
     rev: v0.17.0
     hooks:
@@ -65,3 +67,11 @@ repos:
       - id: markdownlint-cli2
         additional_dependencies:
           - markdown-it-texmath@0.9.1
+  - repo: https://github.com/vimjas/vint
+    rev: v0.4a4
+    hooks:
+      - id: vint
+  - repo: https://github.com/Freed-Wu/vimdoc
+    rev: v0.7.1a
+    hooks:
+      - id: vimdoc

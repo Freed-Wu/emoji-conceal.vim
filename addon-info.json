@@ -1,0 +1,10 @@
+{
+  "name": "conceal",
+  "description": "Provide vim conceal for emoji/html/fontawesome",
+  "version": "0.0.1",
+  "author": "Wu Zhenyu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Freed-Wu/conceal.vim"
+  }
+}

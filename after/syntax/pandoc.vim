@@ -1,1 +1,2 @@
-call emoji#conceal()
+call conceal#emoji()
+call conceal#escape_html()
