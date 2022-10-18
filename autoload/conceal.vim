@@ -8,17 +8,17 @@ let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
 let s:json_dir = s:path . '/assets/json'
 
 ""
-" Get dictionary of conceal.
-function! conceal#get_dict(json_name) abort
+" Get json.
+function! conceal#get_json(json_name) abort
   let l:json = s:json_dir . '/' . a:json_name . '.json'
-  let l:dict = json_decode(readfile(l:json)[0])
-  return l:dict
+  let l:result = json_decode(join(readfile(l:json), ''))
+  return l:result
 endfunction
 
 ""
 " https://github.com/markdown-templates/markdown-emojis
 function! conceal#emoji() abort
-  for [s:name, s:emoji] in items(conceal#get_dict('emoji'))
+  for [s:name, s:emoji] in items(conceal#get_json('emoji'))
     execute "syntax match markdownEmoji ':" . s:name . ":' conceal cchar=" . split(s:emoji, '\zs')[0]
   endfor
 endfunction
@@ -26,7 +26,7 @@ endfunction
 ""
 " https://mateam.net/html-escape-characters/
 function! conceal#escape() abort
-  for l:vs in values(conceal#get_dict('escape'))
+  for l:vs in values(conceal#get_json('escape'))
     for l:v in l:vs[1:]
       if l:vs[0] !=# ''
         let l:cchar = 'cchar=' . l:vs[0]
@@ -41,7 +41,7 @@ endfunction
 "
 " https://fontawesome.com/v5/cheatsheet/pro/brands
 function! conceal#fontawesome_html() abort
-  for [s:k, s:v] in items(conceal#get_dict('fontawesome'))
+  for [s:k, s:v] in items(conceal#get_json('fontawesome'))
     let s:re = '<i class="[^"]*\<fa-' . s:k . '\>[^"]*">'
     execute "syntax region htmlFontawesome start='" . s:re . "' end='</i\\_s*>' conceal cchar=" . s:v
   endfor
@@ -50,7 +50,7 @@ endfunction
 ""
 " Same as |conceal#fontawesome#html|.
 function! conceal#fontawesome_tex() abort
-  for [s:k, s:v] in items(conceal#get_dict('fontawesome'))
+  for [s:k, s:v] in items(conceal#get_json('fontawesome'))
     let s:re = ''
     " first char is not a number
     if index(map(range(10), {v -> v . ''}), s:k[0]) == -1

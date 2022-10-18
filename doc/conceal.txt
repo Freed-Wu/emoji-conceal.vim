@@ -15,8 +15,14 @@ INTRODUCTION                                                   *conceal-intro*
 ==============================================================================
 FUNCTIONS                                                  *conceal-functions*
 
-conceal#get_dict({json_name})                             *conceal#get_dict()*
-  Get dictionary of conceal.
+coc#source#wechat#init()                            *coc#source#wechat#init()*
+  https://github.com/neoclide/coc.nvim/wiki/Create-custom-source
+
+coc#source#wechat#complete({opt}, {cb})         *coc#source#wechat#complete()*
+  https://emojipedia.org/wechat/show_all/
+
+conceal#get_json({json_name})                             *conceal#get_json()*
+  Get json.
 
 conceal#emoji()                                              *conceal#emoji()*
   https://github.com/markdown-templates/markdown-emojis
