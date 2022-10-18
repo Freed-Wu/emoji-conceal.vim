@@ -1,1 +1,1 @@
-call emoji#conceal()
+call conceal#emoji()
