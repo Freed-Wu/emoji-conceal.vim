@@ -88,6 +88,13 @@ see [Input emoji](#input-emoji) to know how to complete
           \ }
 ```
 
+- [lervag/vimtex](https://github.com/lervag/vimtex)
+
+vimtex support fontawesome conceal for latex and it detects user if import
+fontawesome5 package, which is more powerful. The plugin's function which
+conceals fontawesome for latex will not be called by default in order to avoid
+conflict.
+
 ## FAQ
 
 - Change conceal color?
