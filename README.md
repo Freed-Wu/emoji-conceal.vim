@@ -57,15 +57,6 @@ After using this plugin:
 
 ![after-html](https://user-images.githubusercontent.com/32936898/193464801-0298bd37-7367-4dbe-bacc-87c33b412925.png)
 
-Support completing [wechat emoji](https://emojipedia.org/wechat/show_all/)
-(requires [coc.nvim](github.com/neoclide/coc.nvim)),
-see [Input emoji](#input-emoji) to know how to complete
-[github emoji](https://github.com/markdown-templates/markdown-emojis).
-
-![complete](https://user-images.githubusercontent.com/32936898/196516002-ec4222d7-f5bc-41a2-bdd7-768f9f6d3d43.png)
-
-![result](https://user-images.githubusercontent.com/32936898/196516013-53a2840c-2ba3-4921-b246-1ab18d18034f.png)
-
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
 
 - [Conflict](#conflict)
