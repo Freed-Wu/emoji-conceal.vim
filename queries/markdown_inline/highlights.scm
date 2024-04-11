@@ -1,5 +1,5 @@
 ; Don't edit it!
-; Updated by scripts/update-markdown_inline-highlights.scm.vim
+; Updated by scripts/update-highlights.scm.vim
 ;; extends
 ((inline) @emoji (#eq? @emoji ":+1:") (#set! conceal "👍"))
 ((inline) @emoji (#eq? @emoji ":-1:") (#set! conceal "👎"))
