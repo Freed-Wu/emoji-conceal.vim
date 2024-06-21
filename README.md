@@ -26,6 +26,8 @@
 ![github/repo-size](https://shields.io/github/repo-size/Freed-Wu/conceal.vim)
 ![github/v](https://shields.io/github/v/release/Freed-Wu/conceal.vim)
 
+[![luarocks](https://img.shields.io/luarocks/v/Freed-Wu/conceal.vim)](https://luarocks.org/modules/Freed-Wu/conceal.vim)
+
 Provide vim conceal for:
 
 <!-- markdownlint-disable MD033 -->
